@@ -1,18 +1,28 @@
----
-license: cc-by-nc-4.0
-tags:
-- merge
-- mergekit
-- lazymergekit
-- LDCC/LDCC-SOLAR-10.7B
-- upstage/SOLAR-10.7B-Instruct-v1.0
----
-
 # SOLAR-10.7B-slerp
 
 SOLAR-10.7B-slerp is a merge of the following models using [mergekit](https://github.com/cg123/mergekit):
 * [LDCC/LDCC-SOLAR-10.7B](https://huggingface.co/LDCC/LDCC-SOLAR-10.7B)
 * [upstage/SOLAR-10.7B-Instruct-v1.0](https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0)
+
+## HuggingFace
+[SJ-Donald/SOLAR-10.7B-slerp](https://huggingface.co/SJ-Donald/SOLAR-10.7B-slerp)
+
+## How to use
+
+```Python
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+repo = 'SJ-Donald/SOLAR-10.7B-slerp'
+
+tokenizer = AutoTokenizer.from_pretrained(repo)
+model = AutoModelForCausalLM.from_pretrained(
+    repo,
+    return_dict=True,
+    torch_dtype=torch.float16,
+    device_map='auto'
+)
+```
 
 ## 🧩 Configuration
 
@@ -34,5 +44,14 @@ parameters:
     - value: 0.5
 tokenizer_source: union
 dtype: float16
-
 ```
+
+---
+license: cc-by-nc-4.0
+tags:
+- merge
+- mergekit
+- lazymergekit
+- LDCC/LDCC-SOLAR-10.7B
+- upstage/SOLAR-10.7B-Instruct-v1.0
+---
