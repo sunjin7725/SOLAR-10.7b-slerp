@@ -7,6 +7,14 @@ SOLAR-10.7B-slerp is a merge of the following models using [mergekit](https://gi
 ## HuggingFace
 [SJ-Donald/SOLAR-10.7B-slerp](https://huggingface.co/SJ-Donald/SOLAR-10.7B-slerp)
 
+
+## Open-Ko-LLM-Leaderboard
+
+| Average | Ko-ARC | Ko-HellaSwag | Ko-MMLU | Ko-TruthfulQA | Ko-CommonGen V2 |
+| ------: | -----: | -----------: | ------: | ------------: | --------------: |
+|   56.93 |  53.58 |        62.03 |   53.31 |         57.16 |           58.56 |
+
+
 ## How to use
 
 ```Python
