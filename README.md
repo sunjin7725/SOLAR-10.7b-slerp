@@ -8,7 +8,9 @@ SOLAR-10.7B-slerp is a merge of the following models using [mergekit](https://gi
 [SJ-Donald/SOLAR-10.7B-slerp](https://huggingface.co/SJ-Donald/SOLAR-10.7B-slerp)
 
 
-## Open-Ko-LLM-Leaderboard
+## Benchmark
+
+### Open-Ko-LLM-Leaderboard
 
 | Average | Ko-ARC | Ko-HellaSwag | Ko-MMLU | Ko-TruthfulQA | Ko-CommonGen V2 |
 | ------: | -----: | -----------: | ------: | ------------: | --------------: |
